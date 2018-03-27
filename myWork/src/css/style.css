@@ -1,0 +1,178 @@
+html,
+body,
+div,
+ul,
+li,
+img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.carousel ul,
+li {
+    list-style: none;
+}
+
+.carousel {
+    width: 1920px;
+    height: 900px;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-ct {
+    position: absolute;
+    overflow: hidden;
+
+}
+
+.img-ct>li {
+    float: left;
+    width: 1920px;
+    height: 900px;
+}
+
+.img-ct:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.arrow {
+    position: absolute;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    z-index: 1;
+    top: 50%;
+    margin-top: -50px;
+    color: #fff;
+    line-height: 95px;
+    font-size: 50px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.arrow:hover {
+    opacity: 0.7;
+}
+
+.pre {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+
+.bullet {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    bottom: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.bullet>li {
+    display: inline-block;
+    width: 80px;
+    height: 20px;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0;
+    margin: 0 1px;
+}
+
+.active {
+    background: rgb(252, 249, 249);
+    opacity: 0.8;
+}
+/* 瀑布流 */
+.wrap {
+    margin: 0 auto;
+    width: 1690px;
+}
+
+.ct-waterfall {
+    margin: 0 auto;
+    /* border: 1px solid black; */
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#pic-ct {
+    position: relative;
+}
+
+#pic-ct .item {
+    position: absolute;
+    padding: 0 0 10px 0;
+    width: 400px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    background: #fff;
+    opacity: 1;
+    transition: all 0.8s;
+}
+
+#pic-ct .item img {
+    margin: 10px;
+    width: 360px;
+}
+
+#pic-ct .item .header {
+    height: 25px;
+    margin: 0 12px;
+    border-bottom: 1px solid #ccc;
+}
+
+#pic-ct .desp {
+    font-size: 12px;
+    line-height: 1.8;
+    margin: 10px 15px 0;
+    color: rgb(58, 54, 54);
+}
+
+.hide {
+    display: none;
+    border: 1px solid pink;
+}
+
+#load {
+
+    margin: 20px auto;
+    padding: 5px 10px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 200px;
+
+    font-size: 24px;
+    line-height: 36px;
+}
+.top {
+    text-align: center;
+    position: fixed;
+    right: 0px;
+    bottom: 20px;
+    width: 125px;
+    height: 50px;
+    font-size: 24px;
+    line-height: 50px;
+    background: lightgreen;
+    border: 1px solid greenyellow;
+    border-radius: 5px;
+    display: none;
+    z-index: 1;
+    cursor: pointer;
+}
