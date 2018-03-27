@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>news</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body>
+    <div class="carousel">
+        <ul class="img-ct">
+            <li data-id=0>
+                <a href="#">
+                    <!-- <img src="http://pic1.win4000.com/wallpaper/a/57313c75587b7.jpg" alt=""> -->
+                    <img src="imgs/02.jpg" alt="">
+                </a>
+
+            </li>
+            <li data-id=1>
+                <a href="#">
+                    <!-- <img src="http://www.deskcar.com/desktop/else/201471792902/1.jpg" alt=""> -->
+                    <img src="imgs/03.jpg" alt="">
+                </a>
+            </li>
+            <li data-id=2>
+                <a href="#">
+                    <!-- <img src="http://img.tuku.cn/file_big/201703/7cea5b8cc024476492d8e35a64d513a6.jpg" alt=""> -->
+                    <img src="imgs/04.jpg" alt="">
+                </a>
+            </li>
+            <li data-id=3>
+                <a href="#">
+                    <!-- <img src="https://i0download.pchome.net/g1/M00/11/17/oYYBAFYgcH6IOuovAAWDUuOi-OYAACu2ADMdmIABYNq904.jpg" alt=""> -->
+                    <img src="imgs/01.jpg" alt="">
+                </a>
+            </li>
+        </ul>
+        <a href="#" class="arrow pre">
+            &lt;</a>
+        <a href="#" class="arrow next">&gt;</a>
+        <ul class="bullet">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <!-- 瀑布流 -->
+    <div class="wrap">
+        <div class="ct-waterfall clearfix">
+            <ul class="clearfix" id="pic-ct">
+                <!-- <li class="item">
+                    <a href="#" class="link">
+                        <img src="http://cdn.jirengu.com/book.jirengu.com/img/12.jpg" alt="">
+
+                    </a>
+                    <h4 class="header">标题</h4>
+                    <p class="desp">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero ipsa maxime voluptas minus provident
+                        molestias, officia esse rerum enim commodi tenetur fugit, magni doloremque ex accusamus at tempora!
+                        Sed, mollitia?</p>
+                </li> -->
+
+                <!-- 用于计算item宽度和列数，但不展示出来 -->
+                <li class="item hide"></li>
+            </ul>
+        </div>
+    </div>
+    <div id="load">加载更多</div>
+
+    <div class="top">
+        回到顶部
+    </div>
+    <!-- <script src="https://code.jquery.com/jquery-3.0.0.js"></script> -->
+
+    <script src="src/js/lib/require.js" data-main="src/js/app/index.js"></script>
+
+</body>
+
+</html>
