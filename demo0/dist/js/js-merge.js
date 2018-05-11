@@ -1,0 +1,1 @@
+var btn=document.getElementById("btn");btn.onclick=function(){btn.style.color="blue"};var link=document.getElementById("link");link.onclick=function(){link.style.color="blue"};
